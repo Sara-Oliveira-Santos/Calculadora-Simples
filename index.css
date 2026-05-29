@@ -1,0 +1,49 @@
+body {
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#calculadora {
+    transform: scale(1); 
+    transform-origin: center; 
+}
+
+#visor {
+    width: 94%;
+    background: #fa6e6e;    
+    border: none;     
+    color: #fff;              
+    border-radius: 10px;     
+    font-size: 2.2rem;        
+    padding: 12px;            
+    text-align: right;        
+    margin-bottom: 15px;      
+}
+#teclado {
+    width: 100%;
+    border-collapse: collapse; 
+}
+#teclado td {
+    width: 25%;                   
+    padding: 0;                    
+    border: 4px solid transparent; 
+}
+#teclado input[type="button"] {
+    width: 100%;          
+    height: 60px;        
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #fa6e6e;     
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 1.5rem;    
+}
+
+#teclado input[type="button"]:active {
+    color: rgb(187, 27, 27);
+}
